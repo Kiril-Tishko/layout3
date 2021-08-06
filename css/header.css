@@ -1,0 +1,152 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{width: 7px;}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, ul {
+	margin: 0;
+}
+/* HEADER */
+header {
+	height: 100vh;
+	position: relative;
+	background: url(img/header-background.jpg) top left / cover no-repeat;
+}
+
+@media (max-width: 730px) {
+	.what-i-do, .about-me, header {
+		background-attachment: unset !important;
+	}
+}
+
+.header__container {
+	max-width: 1600px;
+	width: 75%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@media(max-width: 670px) {
+	.header__container {
+		top: 50%;
+	}
+}
+
+@media(max-width: 400px) {
+	.header__container {
+		width: 100%;
+		padding: 0 10%;
+		position: unset;
+		transform: translate(0);
+		margin-top: 7%;
+	}
+}
+
+@media screen and (max-width: 400px) and (min-height: 640px) {
+	.header__container {
+		position: absolute;
+		top: 45%;
+		transform: translate(-50%,-50%);
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 300px) and (min-height: 640px) {
+	.header__container {
+		top: 50%;
+		padding: 0 7%;
+	}
+}
+
+.header__title {
+	font-size: 72px;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+}
+
+@media(max-width: 550px) {
+	.header__title {
+		font-size: 63px;
+	}
+}
+
+@media(max-width: 460px) {
+	.header__title {
+		font-size: 56px;
+	}
+}
+
+.header__subtitle {
+	font-size: 29px;
+	font-weight: normal;
+	margin-top: 15px;
+	font-family: "Raleway", sans-serif;
+}
+
+@media(max-width: 550px) {
+	.header__subtitle {
+		font-size: 25px;
+	}
+}
+
+.header__text {
+	width: 60%;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 15px;
+	font-family: "Noto Sans", sans-serif;
+}
+
+@media(max-width: 720px) {
+	.header__text {
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 550px) {
+	.header__text {
+		width: 90%;
+	}
+}
+
+.header__button {
+	display: block;
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 12.5px;
+	text-transform: uppercase;
+	color: #fff;
+	/*background: #ff2b4a;*/
+	background: #000;
+	margin-top: 60px;
+	font-family: "Noto Sans", sans-serif;
+}
+
+@media(max-width: 550px) {
+	.header__button {
+		width: 65%;
+		margin-top: 45px;
+	}
+}
+
+@media(max-width: 400px) {
+	.header__button {
+		width: 75%;
+		margin-top: 32px;
+	}
+}
